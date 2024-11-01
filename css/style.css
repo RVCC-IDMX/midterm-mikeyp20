@@ -1,8 +1,75 @@
-/* Styles for Mobile Site */
+/* body*/
+body {
+    background-color: #CFA34B ;
+    font-family: Bebas Neue, "Times New Roman",serif;
+}
+
 
 /* Header & Hero */
+#logo,header,footer {
+    text-align:center;
+    background-color: #465F87;
+    padding:20px;
+    border:10px outset white;
+    border-radius: 40px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Anton, "Impact",sans-serif;
+    font-size: 300%;
+}
 
-/* Projects */
+/* Accomplishments */
+#accomplishments{
+    border: 10px solid #465F87;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+#accomplishments img{
+    max-width:100%;
+    max-height: 100%;
+}
+#accomplishments figure{
+    text-align: center;
+}
+
+/* Competitors */
+
+#competitors {
+    border: 10px solid #465F87;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+#competitors img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+#competitors figure {
+    text-align: center;
+}
+
+#reading {
+    border: 10px solid #465F87;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+#reading div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;  
+}
+#reading div p:first-child::first-letter{
+    float:left;
+    font-size:5em;
+    margin-right:.25em;
+    line-height:.65;
+}
+
+
+
 
 /* Reviews */
 
@@ -10,14 +77,28 @@
 
 
 /* Media state for Desktop site */
-@media (min-width: 1000px) {
+@media screen and (min-width:60em) {
+    figure{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    figcaption{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+
+}
+
 
     /* Header & Hero */
 
-    /* Projects */
+    
 
     /* Reviews */
 
     /* Footer */
 
-}
